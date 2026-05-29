@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88273f47e92666f89213c8986be94bca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88273f47e92666f89213c8986be94bca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88273f47e92666f89213c8986be94bca = L.map(
+                "map_88273f47e92666f89213c8986be94bca",
+                {
+                    center: [16.07, 108.21],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89ed47dfdeea40233042b4a9d0f6b812 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_89ed47dfdeea40233042b4a9d0f6b812.addTo(map_88273f47e92666f89213c8986be94bca);
+        
+    
+            var marker_cluster_d39e7151fce6d92857aa28c56cea2e33 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_956098a2f3c163bd9da77a7b3fc07bdf = L.circleMarker(
+                [16.070715, 108.14853],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d39e7151fce6d92857aa28c56cea2e33);
+        
+    
+        var popup_45a0e57f9d932432a30f707f39163d55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc605453bc6a499bf684ff9416f17942 = $(`<div id="html_cc605453bc6a499bf684ff9416f17942" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 502434534146157<br>     <b>Vĩ độ:</b> 16.070715<br>     <b>Kinh độ:</b> 108.148530<br>     <b>First seen:</b> 2019-03-11 14:41:17+00:00     <b>Ảnh:</b><br>     <img src="https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-cho-cute-de-thuong-nhat.jpg" width="200px" style="border-radius: 5px;">     </div>`)[0];
+                popup_45a0e57f9d932432a30f707f39163d55.setContent(html_cc605453bc6a499bf684ff9416f17942);
+            
+        
+
+        circle_marker_956098a2f3c163bd9da77a7b3fc07bdf.bindPopup(popup_45a0e57f9d932432a30f707f39163d55)
+        ;
+
+        
+    
+    
+            var circle_marker_2ecf779f04d52d6e20c4e54edf8617a3 = L.circleMarker(
+                [16.070654, 108.148056],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d39e7151fce6d92857aa28c56cea2e33);
+        
+    
+        var popup_2825347df39a1d94240249f47796386a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_811fc47a4c4ec57f1cc84b613b7a841c = $(`<div id="html_811fc47a4c4ec57f1cc84b613b7a841c" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 502548720801405<br>     <b>Vĩ độ:</b> 16.070654<br>     <b>Kinh độ:</b> 108.148056<br>     <b>First seen:</b> 2019-03-11 14:41:28+00:00     <b>Ảnh:</b><br>     <img src="nan" width="200px" style="border-radius: 5px;">     </div>`)[0];
+                popup_2825347df39a1d94240249f47796386a.setContent(html_811fc47a4c4ec57f1cc84b613b7a841c);
+            
+        
+
+        circle_marker_2ecf779f04d52d6e20c4e54edf8617a3.bindPopup(popup_2825347df39a1d94240249f47796386a)
+        ;
+
+        
+    
+    
+            var circle_marker_6adb02415b3db4e7626380bbc54cc6cc = L.circleMarker(
+                [16.073315, 108.151],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d39e7151fce6d92857aa28c56cea2e33);
+        
+    
+        var popup_85909ab03659b6c11f32132ad41b1235 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb9ee0ecf145cf333ed51a1ffab8d757 = $(`<div id="html_fb9ee0ecf145cf333ed51a1ffab8d757" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 1550982119325643<br>     <b>Vĩ độ:</b> 16.073315<br>     <b>Kinh độ:</b> 108.151000<br>     <b>First seen:</b> 2025-08-22 02:43:31+00:00     <b>Ảnh:</b><br>     <img src="nan" width="200px" style="border-radius: 5px;">     </div>`)[0];
+                popup_85909ab03659b6c11f32132ad41b1235.setContent(html_fb9ee0ecf145cf333ed51a1ffab8d757);
+            
+        
+
+        circle_marker_6adb02415b3db4e7626380bbc54cc6cc.bindPopup(popup_85909ab03659b6c11f32132ad41b1235)
+        ;
+
+        
+    
+    
+            var circle_marker_eaf3fdb2931f22eb83214578932b0e50 = L.circleMarker(
+                [16.073414, 108.15125],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d39e7151fce6d92857aa28c56cea2e33);
+        
+    
+        var popup_70a41679bcbd704753321f9a8867dec5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2e447f87b7315102dae8dac972e40f0 = $(`<div id="html_e2e447f87b7315102dae8dac972e40f0" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 1550982122658976<br>     <b>Vĩ độ:</b> 16.073414<br>     <b>Kinh độ:</b> 108.151250<br>     <b>First seen:</b> 2025-08-22 02:43:31+00:00     <b>Ảnh:</b><br>     <img src="nan" width="200px" style="border-radius: 5px;">     </div>`)[0];
+                popup_70a41679bcbd704753321f9a8867dec5.setContent(html_e2e447f87b7315102dae8dac972e40f0);
+            
+        
+
+        circle_marker_eaf3fdb2931f22eb83214578932b0e50.bindPopup(popup_70a41679bcbd704753321f9a8867dec5)
+        ;
+
+        
+    
+    
+            var circle_marker_c36624534f0cd3996d4af9ee921481fa = L.circleMarker(
+                [16.07348, 108.15111],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d39e7151fce6d92857aa28c56cea2e33);
+        
+    
+        var popup_d4b8bf64df04f544c1b73d555c2cbd37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02f815c901085d68ab55a05c6fb39883 = $(`<div id="html_02f815c901085d68ab55a05c6fb39883" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 1550982172658971<br>     <b>Vĩ độ:</b> 16.073480<br>     <b>Kinh độ:</b> 108.151110<br>     <b>First seen:</b> 2025-08-22 02:43:34+00:00     <b>Ảnh:</b><br>     <img src="nan" width="200px" style="border-radius: 5px;">     </div>`)[0];
+                popup_d4b8bf64df04f544c1b73d555c2cbd37.setContent(html_02f815c901085d68ab55a05c6fb39883);
+            
+        
+
+        circle_marker_c36624534f0cd3996d4af9ee921481fa.bindPopup(popup_d4b8bf64df04f544c1b73d555c2cbd37)
+        ;
+
+        
+    
+    
+            marker_cluster_d39e7151fce6d92857aa28c56cea2e33.addTo(map_88273f47e92666f89213c8986be94bca);
+        
+    
+            var feature_group_c9f5d3fa498cbded547be3d8ed9ed54a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_e1eb0eeb9961cfa62f2ac8a9e3ea7078 = L.heatLayer(
+                [[16.070715, 108.14853], [16.070654, 108.148056], [16.073315, 108.151], [16.073414, 108.15125], [16.07348, 108.15111]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 15,
+  "radius": 12,
+  "blur": 8,
+}
+            );
+        
+    
+            heat_map_e1eb0eeb9961cfa62f2ac8a9e3ea7078.addTo(feature_group_c9f5d3fa498cbded547be3d8ed9ed54a);
+        
+    
+            feature_group_c9f5d3fa498cbded547be3d8ed9ed54a.addTo(map_88273f47e92666f89213c8986be94bca);
+        
+    
+            var layer_control_03d448483e91d2f65b5cf838ba4a2202_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_89ed47dfdeea40233042b4a9d0f6b812,
+                },
+                overlays :  {
+                    "macro_element_d39e7151fce6d92857aa28c56cea2e33" : marker_cluster_d39e7151fce6d92857aa28c56cea2e33,
+                    "Heatmap" : feature_group_c9f5d3fa498cbded547be3d8ed9ed54a,
+                },
+            };
+            let layer_control_03d448483e91d2f65b5cf838ba4a2202 = L.control.layers(
+                layer_control_03d448483e91d2f65b5cf838ba4a2202_layers.base_layers,
+                layer_control_03d448483e91d2f65b5cf838ba4a2202_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_88273f47e92666f89213c8986be94bca);
+
+        
+</script>
+</html>

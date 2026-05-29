@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be3d9cbf85aacee85f29c94192b7a43f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be3d9cbf85aacee85f29c94192b7a43f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be3d9cbf85aacee85f29c94192b7a43f = L.map(
+                "map_be3d9cbf85aacee85f29c94192b7a43f",
+                {
+                    center: [16.07, 108.21],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8811e37eb15e035180e70a7f2d841310 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8811e37eb15e035180e70a7f2d841310.addTo(map_be3d9cbf85aacee85f29c94192b7a43f);
+        
+    
+            var marker_cluster_40e06948e391e32a6b478b40edca6455 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e2b7a4e6229acde87eeb2bc036794688 = L.circleMarker(
+                [16.070715, 108.14853],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_40e06948e391e32a6b478b40edca6455);
+        
+    
+        var popup_57f8f4830e78b17a01a1d79399fa308a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35ff584f07deb3453cf4340591379131 = $(`<div id="html_35ff584f07deb3453cf4340591379131" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 502434534146157<br>     <b>Vĩ độ:</b> 16.070715<br>     <b>Kinh độ:</b> 108.148530<br>     <b>First seen:</b> 2019-03-11 14:41:17+00:00     <b>Pictures:</b> <a href="https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-cho-cute-de-thuong-nhat.jpg" target="_blank">Xem ảnh</a>     </div>`)[0];
+                popup_57f8f4830e78b17a01a1d79399fa308a.setContent(html_35ff584f07deb3453cf4340591379131);
+            
+        
+
+        circle_marker_e2b7a4e6229acde87eeb2bc036794688.bindPopup(popup_57f8f4830e78b17a01a1d79399fa308a)
+        ;
+
+        
+    
+    
+            var circle_marker_4a2e25ef20b90500fd642005809e8aa4 = L.circleMarker(
+                [16.070654, 108.148056],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_40e06948e391e32a6b478b40edca6455);
+        
+    
+        var popup_220792dad82f1e50d8f9e6b901c11a88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27f4fbf35356b1941dac141d3cdf5b9c = $(`<div id="html_27f4fbf35356b1941dac141d3cdf5b9c" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 502548720801405<br>     <b>Vĩ độ:</b> 16.070654<br>     <b>Kinh độ:</b> 108.148056<br>     <b>First seen:</b> 2019-03-11 14:41:28+00:00     <b>Pictures:</b> <a href="nan" target="_blank">Xem ảnh</a>     </div>`)[0];
+                popup_220792dad82f1e50d8f9e6b901c11a88.setContent(html_27f4fbf35356b1941dac141d3cdf5b9c);
+            
+        
+
+        circle_marker_4a2e25ef20b90500fd642005809e8aa4.bindPopup(popup_220792dad82f1e50d8f9e6b901c11a88)
+        ;
+
+        
+    
+    
+            var circle_marker_962ee0d37cf2db7a580f21605cabadb9 = L.circleMarker(
+                [16.073315, 108.151],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_40e06948e391e32a6b478b40edca6455);
+        
+    
+        var popup_b2857a6fd457d2d46f8716713a8d8380 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25a73c5b52847d6122928b58cc074576 = $(`<div id="html_25a73c5b52847d6122928b58cc074576" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 1550982119325643<br>     <b>Vĩ độ:</b> 16.073315<br>     <b>Kinh độ:</b> 108.151000<br>     <b>First seen:</b> 2025-08-22 02:43:31+00:00     <b>Pictures:</b> <a href="nan" target="_blank">Xem ảnh</a>     </div>`)[0];
+                popup_b2857a6fd457d2d46f8716713a8d8380.setContent(html_25a73c5b52847d6122928b58cc074576);
+            
+        
+
+        circle_marker_962ee0d37cf2db7a580f21605cabadb9.bindPopup(popup_b2857a6fd457d2d46f8716713a8d8380)
+        ;
+
+        
+    
+    
+            var circle_marker_04aac3e2a41e1e1f326887c9ac4a503a = L.circleMarker(
+                [16.073414, 108.15125],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_40e06948e391e32a6b478b40edca6455);
+        
+    
+        var popup_2816dbe9e1ffd975ebd17b12600f62a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c034c190878faf77a519cb9fcf5a986b = $(`<div id="html_c034c190878faf77a519cb9fcf5a986b" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 1550982122658976<br>     <b>Vĩ độ:</b> 16.073414<br>     <b>Kinh độ:</b> 108.151250<br>     <b>First seen:</b> 2025-08-22 02:43:31+00:00     <b>Pictures:</b> <a href="nan" target="_blank">Xem ảnh</a>     </div>`)[0];
+                popup_2816dbe9e1ffd975ebd17b12600f62a2.setContent(html_c034c190878faf77a519cb9fcf5a986b);
+            
+        
+
+        circle_marker_04aac3e2a41e1e1f326887c9ac4a503a.bindPopup(popup_2816dbe9e1ffd975ebd17b12600f62a2)
+        ;
+
+        
+    
+    
+            var circle_marker_44771ab5950623b91d490178d1386ab4 = L.circleMarker(
+                [16.07348, 108.15111],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_40e06948e391e32a6b478b40edca6455);
+        
+    
+        var popup_875cb65a26cc16878153c50284c8caea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14bf7bddbba3072f59fe0794ce1b3eed = $(`<div id="html_14bf7bddbba3072f59fe0794ce1b3eed" style="width: 100.0%; height: 100.0%;">     <b>Mapillary ID:</b> 1550982172658971<br>     <b>Vĩ độ:</b> 16.073480<br>     <b>Kinh độ:</b> 108.151110<br>     <b>First seen:</b> 2025-08-22 02:43:34+00:00     <b>Pictures:</b> <a href="nan" target="_blank">Xem ảnh</a>     </div>`)[0];
+                popup_875cb65a26cc16878153c50284c8caea.setContent(html_14bf7bddbba3072f59fe0794ce1b3eed);
+            
+        
+
+        circle_marker_44771ab5950623b91d490178d1386ab4.bindPopup(popup_875cb65a26cc16878153c50284c8caea)
+        ;
+
+        
+    
+    
+            marker_cluster_40e06948e391e32a6b478b40edca6455.addTo(map_be3d9cbf85aacee85f29c94192b7a43f);
+        
+    
+            var feature_group_15f6bc3d38c7827a856da729186a1678 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_3e723c3e901a60edcfa4828d4d6811fe = L.heatLayer(
+                [[16.070715, 108.14853], [16.070654, 108.148056], [16.073315, 108.151], [16.073414, 108.15125], [16.07348, 108.15111]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 15,
+  "radius": 12,
+  "blur": 8,
+}
+            );
+        
+    
+            heat_map_3e723c3e901a60edcfa4828d4d6811fe.addTo(feature_group_15f6bc3d38c7827a856da729186a1678);
+        
+    
+            feature_group_15f6bc3d38c7827a856da729186a1678.addTo(map_be3d9cbf85aacee85f29c94192b7a43f);
+        
+    
+            var layer_control_45592adfdf5876c8faff3dbb39226eec_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_8811e37eb15e035180e70a7f2d841310,
+                },
+                overlays :  {
+                    "macro_element_40e06948e391e32a6b478b40edca6455" : marker_cluster_40e06948e391e32a6b478b40edca6455,
+                    "Heatmap" : feature_group_15f6bc3d38c7827a856da729186a1678,
+                },
+            };
+            let layer_control_45592adfdf5876c8faff3dbb39226eec = L.control.layers(
+                layer_control_45592adfdf5876c8faff3dbb39226eec_layers.base_layers,
+                layer_control_45592adfdf5876c8faff3dbb39226eec_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_be3d9cbf85aacee85f29c94192b7a43f);
+
+        
+</script>
+</html>

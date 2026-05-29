@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f1a2b;
+  background: #f4f7fb;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #d9e2ef;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.topbar span {
+  font-size: 12px;
+  color: #51607a;
+}
+
+.btn {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #1f5eff;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #d9e2ef;
+  background: #f9fbff;
+}
+
+.toolbar label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #51607a;
+  text-transform: uppercase;
+}
+
+.toolbar input {
+  width: 320px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d7dbe0;
+  font-size: 14px;
+}
+
+.meta {
+  font-size: 13px;
+  color: #51607a;
+}
+
+.error {
+  margin: 12px 16px 0;
+  background: #fff1f1;
+  border: 1px solid #ffd4d4;
+  color: #b00020;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.map-shell {
+  flex: 1;
+  background: #e9eef6;
+}
+
+.map-frame {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}

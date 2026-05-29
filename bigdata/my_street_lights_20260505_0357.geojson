@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "my_street_lights_20260505_0357",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "mapillary_id": "502434534146157", "lon": 108.14853, "lat": 16.070715, "first_seen_at": "2019-03-11T14:41:17+0000", "source_pic": "https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-cho-cute-de-thuong-nhat.jpg" }, "geometry": { "type": "Point", "coordinates": [ 108.14853, 16.070715 ] } },
+{ "type": "Feature", "properties": { "mapillary_id": "502548720801405", "lon": 108.148056, "lat": 16.070654, "first_seen_at": "2019-03-11T14:41:28+0000" }, "geometry": { "type": "Point", "coordinates": [ 108.148056, 16.070654 ] } },
+{ "type": "Feature", "properties": { "mapillary_id": "1550982119325643", "lon": 108.151, "lat": 16.073315, "first_seen_at": "2025-08-22T02:43:31+0000" }, "geometry": { "type": "Point", "coordinates": [ 108.151, 16.073315 ] } },
+{ "type": "Feature", "properties": { "mapillary_id": "1550982122658976", "lon": 108.15125, "lat": 16.073414, "first_seen_at": "2025-08-22T02:43:31+0000" }, "geometry": { "type": "Point", "coordinates": [ 108.15125, 16.073414 ] } },
+{ "type": "Feature", "properties": { "mapillary_id": "1550982172658971", "lon": 108.15111, "lat": 16.07348, "first_seen_at": "2025-08-22T02:43:34+0000" }, "geometry": { "type": "Point", "coordinates": [ 108.15111, 16.07348 ] } }
+]
+}
